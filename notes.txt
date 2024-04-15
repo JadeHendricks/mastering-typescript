@@ -11,6 +11,10 @@ Why types?
 - It analyzes our code as we types.
 - Only exists in development.
 
+What is type inference?
+- Type inference refers to typescript compilers ability to infer types from certain values in your code
+- Typescript can remember a values type even if you didn't provide a type annotation, and it will enforce that type moving forward.
+
 Compiling
 - more on the compiler and how it works.
 - The name of the compiler for TS is the typescript compiler or (TSC)
