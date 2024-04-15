@@ -6,6 +6,11 @@ Typescript overview
 - Typescript detects errors in our code without running it. This is called static checking.
 - It does this error checking on the basis of the "kinds of data" in our program again types.
 
+Compiling
+- more on the compiler and how it works.
+- The name of the compiler for TS is the typescript compiler or (TSC)
+- It compiles the typescript down into Javascript.
+
 Why types?
 - It helps us find errors.
 - It analyzes our code as we types.
@@ -15,7 +20,19 @@ What is type inference?
 - Type inference refers to typescript compilers ability to infer types from certain values in your code
 - Typescript can remember a values type even if you didn't provide a type annotation, and it will enforce that type moving forward.
 
-Compiling
-- more on the compiler and how it works.
-- The name of the compiler for TS is the typescript compiler or (TSC)
-- It compiles the typescript down into Javascript.
+Function parameter types
+- This allows Typescript to enforece the types for the values being passed into your function.
+- Typed params are just like typing variables.
+
+Function return types
+- We can specify the type returned by a function. Even though typescript can often infer this, it's prefereable to use explicit annotations.
+- Add the type annotation after the function param list.
+
+Anonymous function
+- When typescript can infer how an unnamed function is going to be called, it can automatically infer its parameters types.
+- for example [1,2,3].forEach((num)) typescript will automatically know that num is a "number" because of how and what it is called on.
+
+The Never type
+- The never type represents values that NEVER occur.
+- We might use it to throw and exception, or a function that never finishes executing.
+- With Never a function never finishes executing - not to be confused with VOID which retuirns null or undefined
