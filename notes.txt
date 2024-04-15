@@ -1,0 +1,17 @@
+What is typescript?
+- Typescript is built on top of Javascript with the purpose of avoiding the common pitfalls and bugs that arise from javascript.
+- It does that by adding types to Javascript.
+
+Typescript overview
+- Typescript detects errors in our code without running it. This is called static checking.
+- It does this error checking on the basis of the "kinds of data" in our program again types.
+
+Why types?
+- It helps us find errors.
+- It analyzes our code as we types.
+- Only exists in development.
+
+Compiling
+- more on the compiler and how it works.
+- The name of the compiler for TS is the typescript compiler or (TSC)
+- It compiles the typescript down into Javascript.
