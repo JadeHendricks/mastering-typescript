@@ -36,3 +36,8 @@ The Never type
 - The never type represents values that NEVER occur.
 - We might use it to throw and exception, or a function that never finishes executing.
 - With Never a function never finishes executing - not to be confused with VOID which retuirns null or undefined
+
+Type alias
+- Instead of writing out objects in an annotation, we can declare them seperately in a type alias, which is simply the desired shape of the objects
+- This allows us to make our code more readable and even reuse the types elsewhere in our code.
+- type Person = { name: strong, age: number };
