@@ -41,3 +41,9 @@ Type alias
 - Instead of writing out objects in an annotation, we can declare them seperately in a type alias, which is simply the desired shape of the objects
 - This allows us to make our code more readable and even reuse the types elsewhere in our code.
 - type Person = { name: strong, age: number };
+
+Array types
+- Arrays can be  typed like with - string[] number[] Person[]
+- These arrays only allow data of that one type inside them.
+-- Alternative array type syntax 
+- Array<string> || Array<Number>
