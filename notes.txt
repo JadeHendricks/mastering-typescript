@@ -47,3 +47,13 @@ Array types
 - These arrays only allow data of that one type inside them.
 -- Alternative array type syntax 
 - Array<string> || Array<Number>
+
+Unions
+- Unions types allow us to give a value a few different possible types.
+- The value is alowed to be this or that and typescript will enforce it.
+- var age: number | string
+
+Literal Types
+- Literal types are not just types, but the values themselves too!
+- Locks the user in to use certain answers or params.
+- answer(answer: "yes" | "no" | "maybe")
