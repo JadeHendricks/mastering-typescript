@@ -63,3 +63,10 @@ Tuple
 - Tuples are arrays with a fixed length and order with specific types - like super rigid arrays. //
 - let myTuple: [number, string, boolean];
 - Tuples allow you to add in values after it has been approved as a Tuple is just an arrray and is more used for typing.
+
+Enums
+- Enums allow us to define a set of named constants. We can give these constants numberic and string values.
+- There's quite a few options when it comes to enums.
+- enum Reponse { no = "No", yes = "Yes" }
+- Using "Const Enum" changes the way that the typescript gets compiled. What it does is that erazes all the existance of the enum from the reulting Javascript and
+  replaces every value with the value behind the enum.
