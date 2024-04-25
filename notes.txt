@@ -57,3 +57,9 @@ Literal Types
 - Literal types are not just types, but the values themselves too!
 - Locks the user in to use certain answers or params.
 - answer(answer: "yes" | "no" | "maybe")
+
+Tuple
+- Tuples are a special type exclusive to Typescript (they don't exists in JS)
+- Tuples are arrays with a fixed length and order with specific types - like super rigid arrays. //
+- let myTuple: [number, string, boolean];
+- Tuples allow you to add in values after it has been approved as a Tuple is just an arrray and is more used for typing.
