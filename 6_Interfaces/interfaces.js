@@ -10,6 +10,7 @@ var james = {
     id: 2,
     first: "James",
     last: "Hardy",
+    //as you can see no need to add in a nickname here, but you can if you want to.
 };
 var eric = {
     sayHi: function () { return "Hi"; },
@@ -25,3 +26,12 @@ var shoes = {
     }
 };
 console.log(shoes.applyDiscount(0.4));
+//creating a service dog
+var chewy = {
+    name: "Chewy",
+    breed: "Lab",
+    bark: function () {
+        return "bark";
+    },
+    job: "guide dog"
+};
