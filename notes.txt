@@ -70,3 +70,18 @@ Enums
 - enum Reponse { no = "No", yes = "Yes" }
 - Using "Const Enum" changes the way that the typescript gets compiled. What it does is that erazes all the existance of the enum from the reulting Javascript and
   replaces every value with the value behind the enum.
+
+Interfaces
+- Interfaces server almost the exact same purpose as type alias (with a slightly different syntax)
+- We can use them to create reusable, modular types that describe the shapes of objects.
+- Only used to describe a shape for an object.
+- If you name two interfaces with the same name, they will combine instead of a new one being created.
+- Interfaces allows you to extend form another interface. (we are able to extend multiple interfaces) - interface Engineer extends Person, Employee
+-- Types vs Interfaces
+-- Types
+   - Once a type is made we can't reopen them and add onto them.
+   - To extend a type. We use the "&" sign - type Person = Name & { age: number }
+-- Interfaces
+   - Interfaces can only describe the shape of an Object
+   - With Interfaces we can reopen them and add onto them i.e - If you name two interfaces with the same name, they will combine instead of a new one being created
+   - To extend an interface we use the "Extends" keyword
