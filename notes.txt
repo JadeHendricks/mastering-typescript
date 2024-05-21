@@ -84,4 +84,20 @@ Interfaces
 -- Interfaces
    - Interfaces can only describe the shape of an Object
    - With Interfaces we can reopen them and add onto them i.e - If you name two interfaces with the same name, they will combine instead of a new one being created
-   - To extend an interface we use the "Extends" keyword
+   - To extend an interface we use the "Extends" keyword.
+
+Non-Null Assertion Operator
+- const btn = document.getElementById("btn") : "HTMLElement | null"
+- By doing the above typescript will either think it is a a element or null and we will ahve issues using the button.
+- To avoid the above, we can added "!" to the end of the query and this tells Typescript that he element will not be null
+-- Example - const btn = document.getElementById("btn")! : "HTMLElement"
+
+Type Assertion
+- Sometimes you might have more information about a value's type, and you want to make sure Typescript know's it too
+- You can asset a value's type by using 'AS' keyword, followed by the specific type you want to assert.
+-- Example
+   - let mystery: unknown = 4; - const numChars = (mystery as string).length;
+   - const btn = document.getElementById("btn")! as HTMLButtonElement; //allows us to give more specific info for us to use
+   - const input = document.getElementById("todoInput")! as HTMLInputElement; //allows us to give more specific info for us to use
+   -- Another way of writting this
+      - (<HTMLInputElement>input).value //avoid with react as <> are mostly used for components
