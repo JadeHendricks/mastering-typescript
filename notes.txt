@@ -103,7 +103,13 @@ Type Assertion
       - (<HTMLInputElement>input).value //avoid with react as <> are mostly used for components
 
 Abstract Classes 
-- Youc can't create an instance of an abstract class.
+- You can't create an instance of an abstract class.
 - You can add it's own properties and values/methods that can be used in children classes.
 - You can also set abstract methods in the class in order to force children classes to implement their this method i.e abstract getPay(): number;
 - See 7_Classes for an example.
+
+Generics
+- Generics allows us to define reusable functions and classes that work with multiple types rather than a single type.
+- Syntax example - function wrapInArray<T>(element: T): T[] { return [element] }
+- We are able to use generics with constraints, mutiple types, classes and default type parameters.
+- See 8_Generics for an example.
