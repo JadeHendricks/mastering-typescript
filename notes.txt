@@ -101,3 +101,9 @@ Type Assertion
    - const input = document.getElementById("todoInput")! as HTMLInputElement; //allows us to give more specific info for us to use
    -- Another way of writting this
       - (<HTMLInputElement>input).value //avoid with react as <> are mostly used for components
+
+Abstract Classes 
+- Youc can't create an instance of an abstract class.
+- You can add it's own properties and values/methods that can be used in children classes.
+- You can also set abstract methods in the class in order to force children classes to implement their this method i.e abstract getPay(): number;
+- See 7_Classes for an example.
